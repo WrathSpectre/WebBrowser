@@ -1,0 +1,6 @@
+.jfx-button {
+    -fx-pref-width: 30px;
+    -fx-pref-height: 30px;
+    -fx-padding: 0px 1000px 50px 0px;
+    -fx-background-color: transparent;
+}

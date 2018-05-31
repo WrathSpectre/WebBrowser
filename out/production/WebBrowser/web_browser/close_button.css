@@ -1,0 +1,4 @@
+.button {
+    -fx-graphic: url("close_icon.png");
+    -fx-background-color: #00000000;
+}

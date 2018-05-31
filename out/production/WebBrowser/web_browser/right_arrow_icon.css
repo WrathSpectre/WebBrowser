@@ -1,0 +1,4 @@
+.button {
+    -fx-graphic: url("right_arrow_icon2.png");
+    -fx-background-color: #00000000;
+}

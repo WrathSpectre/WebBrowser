@@ -1,0 +1,41 @@
+.jfx-tab-pane .tab-header-area .tab-header-background {
+    -fx-opacity: 0;
+    -fx-padding 5px;
+}
+
+.jfx-tab-pane {
+    -fx-tab-min-width: 150px;
+    -fx-tab-min-height: 35px;
+}
+
+.tab {
+    -fx-background-insets: 0 1 0 1,0,0;
+}
+
+.tab-pane:focused > .tab-header-area > .headers-region > .tab:selected .focus-indicator {
+    -fx-border-color: transparent;
+}
+
+.jfx-tab-pane .tab-label {
+    -fx-font-size: 12px;
+    -fx-font-family: Vivaldi;
+    -fx-text-weight: normal;
+}
+
+.jfx-tab-pane .tab-selected-line {
+    -fx-pref-height: 0px;
+}
+
+.tab .tab-label {
+    -fx-alignment: CENTER;
+    -fx-text-fill: white;
+}
+
+.jfx-tab-pane .tab:selected {
+    -fx-background-color: white;
+}
+
+.tab:selected .tab-label {
+    -fx-alignment: CENTER;
+    -fx-text-fill: black;
+}

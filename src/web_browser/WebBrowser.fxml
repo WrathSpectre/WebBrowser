@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTabPane?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #512DA8;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="web_browser.WebBrowserController">
+   <children>
+      <JFXTabPane fx:id="tabLayout" layoutX="219.0" layoutY="154.0" stylesheets="@tab.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <padding>
+            <Insets top="3.0" />
+         </padding></JFXTabPane>
+      <JFXButton fx:id="minimalizeButton" buttonType="RAISED" contentDisplay="CENTER" layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="25.0" ripplerFill="#a8a8a8" stylesheets="@minimize_button.css" text=" " AnchorPane.rightAnchor="90.0" AnchorPane.topAnchor="5.0" />
+      <JFXButton fx:id="windowButton" buttonType="RAISED" contentDisplay="CENTER" layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="25.0" ripplerFill="#a8a8a8" stylesheets="@window_button.css" text=" " AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="5.0" />
+      <JFXButton fx:id="closeButton" buttonType="RAISED" contentDisplay="CENTER" layoutX="10.0" layoutY="11.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="25.0" ripplerFill="RED" stylesheets="@close_button.css" text=" " AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="5.0" />
+   </children>
+</AnchorPane>
