@@ -16,7 +16,7 @@ public class Main extends Application {
         primaryStage = stage;
 
         Parent root = FXMLLoader.load(getClass().getResource("WebBrowser.fxml"));
-        stage.setScene(new Scene(root, 1400, 1000));
+        stage.setScene(new Scene(root, 1200, 800));
         stage.initStyle(StageStyle.UNDECORATED);
         stage.show();
     }

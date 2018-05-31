@@ -1,11 +1,10 @@
 .jfx-tab-pane .tab-header-area .tab-header-background {
     -fx-opacity: 0;
-    -fx-padding 5px;
 }
 
 .jfx-tab-pane {
     -fx-tab-min-width: 150px;
-    -fx-tab-min-height: 35px;
+    -fx-tab-min-height: 30px;
 }
 
 .tab {
