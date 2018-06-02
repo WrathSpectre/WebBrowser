@@ -14,6 +14,7 @@ import javafx.scene.control.Tooltip;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
+import javafx.stage.Screen;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 import javafx.stage.Window;
@@ -31,7 +32,7 @@ public class WebBrowserController implements Initializable {
     private JFXTabPane tabLayout;
 
     @FXML
-    private JFXButton minimalizeButton, widnowButton, closeButton;
+    private JFXButton minimalizeButton, windowButton, closeButton;
 
     private double xOffset, yOffset;
 
@@ -53,12 +54,15 @@ public class WebBrowserController implements Initializable {
             stage.setIconified(true);
         });
 
-        minimalizeButton.setOnAction(event -> {
+        windowButton.setOnAction(event -> {
+            stage.setFullScreen(true);
+
         });
 
         closeButton.setOnAction(event -> stage.close());
 
-        tabLayout.setTabClosingPolicy(JFXTabPane.TabClosingPolicy.SELECTED_TAB);
+        tabLayout.setTabClosingPolicy(TabPane.TabClosingPolicy.SELECTED_TAB);
+
 
         Tab tabb = new Tab();
         tabb.setGraphic(createTabButton("fff"));
@@ -70,7 +74,6 @@ public class WebBrowserController implements Initializable {
         tabb.setDisable(true);
 
         tabLayout.getTabs().add(tabb);
-
 
         ((Button) tabb.getGraphic()).setOnAction(new EventHandler<>() {
             @Override
